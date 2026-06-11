@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Deybi </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="cursor-glow"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">INICIO</a>
+      <div class="nav-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#evidencias">Evidencias</a>
+        <a href="#logros">Logros</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Disponible para proyectos · Piura, Perú
+      </div>
+      <h1 class="hero-name">
+        Deybi<br /><span>Flores Huamán</span>
+      </h1>
+      <div class="hero-terminal">
+        <span class="prompt">~/portfolio</span>
+        <span style="color:var(--text-3)"> $ </span>
+        <span class="cmd" id="typed-text"></span><span class="cursor-blink"></span>
+      </div>
+      <p class="hero-bio">
+        Estudiante apasionado por crear soluciones tecnológicas integrales: desarrollo web Full-Stack, modelos de Machine Learning y sistemas interactivos con IoT. Riguroso con el código y orientado a resultados en entornos reales.
+      </p>
+      <div class="hero-actions">
+        <a href="CV.pdf" download="Deybi_Flores_CV.pdf" class="btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 16l-4-4h3V4h2v8h3l-4 4z"/><path d="M4 20h16"/></svg>
+          Descargar CV
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deybi1627@gmail.com" target="_blank" rel="noopener" class="btn-outline" title="Enviar correo a deybi1627@gmail.com">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 4l8 9 8-9"/></svg>
+          Contactar
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Proyectos completados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Áreas tecnológicas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">ML</div>
+          <div class="stat-label">+ IoT + Full-Stack</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ / SKILLS -->
+  <section id="sobre-mi">
+    <div class="section-inner">
+      <p class="section-label reveal">// 01 — Sobre mí</p>
+      <h2 class="section-title reveal">Stack & Habilidades</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Dominio técnico</h3>
+          <div class="skill-row">
+            <span class="skill-name"><span class="icon">⚡</span>PHP / Laravel</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name"><span class="icon">🐍</span>Python / TensorFlow</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name"><span class="icon">🗄️</span>MySQL / SQL</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name"><span class="icon">⚙️</span>C++ / Arduino</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name"><span class="icon">🎨</span>Tailwind CSS</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+        </div>
+        <div class="about-card reveal" style="transition-delay:.1s">
+          <h3>Tecnologías y herramientas</h3>
+          <div style="margin-bottom:1rem">
+            <p style="font-size:.72rem; color:var(--text-3); margin-bottom:.5rem; font-family:'JetBrains Mono',monospace;">Web & Backend</p>
+            <div class="tech-tags">
+              <span class="tech-tag cyan">Laravel 12</span>
+              <span class="tech-tag cyan">PHP 8</span>
+              <span class="tech-tag cyan">Tailwind CSS</span>
+              <span class="tech-tag cyan">JSON</span>
+              <span class="tech-tag cyan">REST</span>
+            </div>
+          </div>
+          <div style="margin-bottom:1rem">
+            <p style="font-size:.72rem; color:var(--text-3); margin-bottom:.5rem; font-family:'JetBrains Mono',monospace;">Machine Learning</p>
+            <div class="tech-tags">
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">SVM</span>
+              <span class="tech-tag">KNN</span>
+              <span class="tech-tag">MNIST</span>
+            </div>
+          </div>
+          <div>
+            <p style="font-size:.72rem; color:var(--text-3); margin-bottom:.5rem; font-family:'JetBrains Mono',monospace;">IoT & Hardware</p>
+            <div class="tech-tags">
+              <span class="tech-tag emerald">Arduino</span>
+              <span class="tech-tag emerald">ESP8266</span>
+              <span class="tech-tag emerald">C++</span>
+              <span class="tech-tag emerald">Servomotores</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+
+  <hr class="divider" />
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="section-inner">
+      <p class="section-label reveal">// 02 — Proyectos</p>
+      <h2 class="section-title reveal">Proyectos Destacados</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-pill">Desarrollo Web</div>
+          <h3>Sistema de Gestión Académica (SIAE)</h3>
+          <p>Dashboard administrativo para un Instituto Pedagógico. Automatiza calificaciones, asistencias y reportes en tiempo real para docentes y directivos.</p>
+          <div class="project-footer">
+            <span class="project-tech">Laravel 12</span>
+            <span class="project-tech">PHP 8</span>
+            <span class="project-tech">MySQL</span>
+            <span class="project-tech">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.08s">
+          <div class="project-pill">Desarrollo Web</div>
+          <h3>Portal — Colegio de Abogados de Ventanilla</h3>
+          <p>Motor de búsqueda en tiempo real para el padrón de agremiados. Optimiza la lectura y consulta de datos estructurados para uso institucional.</p>
+          <div class="project-footer">
+            <span class="project-tech">PHP</span>
+            <span class="project-tech">JSON</span>
+            <span class="project-tech">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card indigo reveal" style="transition-delay:.16s">
+          <div class="project-pill indigo">Machine Learning</div>
+          <h3>TecnoForms — Reconocimiento de Dígitos</h3>
+          <p>Software de visión artificial entrenado con el dataset MNIST. Evaluación comparativa de CNN, SVM y KNN para reconocer dígitos manuscritos.</p>
+          <div class="project-footer">
+            <span class="project-tech">TensorFlow</span>
+            <span class="project-tech">Python</span>
+            <span class="project-tech">MNIST</span>
+            <span class="project-tech">CNN · SVM · KNN</span>
+          </div>
+        </div>
+
+        <div class="project-card emerald reveal" style="transition-delay:.24s">
+          <div class="project-pill emerald">IoT / Hardware</div>
+          <h3>Sistema de Cerradura Electrónica</h3>
+          <p>Dispositivo físico de seguridad con teclado matricial, microcontrolador ESP8266 y servomotor. Programado en C++ con lógica de autenticación local.</p>
+          <div class="project-footer">
+            <span class="project-tech">C++</span>
+            <span class="project-tech">Arduino</span>
+            <span class="project-tech">ESP8266</span>
+            <span class="project-tech">Servomotor</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- EVIDENCIAS -->
+  <section id="evidencias">
+    <div class="section-inner">
+      <p class="section-label reveal">// 03 — Evidencias</p>
+      <h2 class="section-title reveal">Documentación Visual</h2>
+      <div class="evidence-grid">
+        <div class="evidence-card reveal">
+          <div class="evidence-img">
+            <img src="siae.png" alt="Dashboard SIAE"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="evidence-placeholder" style="display:none">
+              <span class="ph-icon">🖥️</span>
+              <span>Reemplaza <code>siae.png</code><br/>con tu captura del Dashboard SIAE</span>
+            </div>
+          </div>
+          <p class="evidence-caption">Fig. 1 — Dashboard administrativo del Sistema de Gestión Académica (SIAE) implementado con Laravel 12 y Tailwind CSS.</p>
+        </div>
+        <div class="evidence-card reveal" style="transition-delay:.1s">
+          <div class="evidence-img">
+            <img src="cav.png" alt="Circuito IoT"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="evidence-placeholder" style="display:none">
+              <span class="ph-icon">⚙️</span>
+              <span>Reemplaza <code>cav.png</code><br/>con la foto de tu circuito Arduino</span>
+            </div>
+          </div>
+          <p class="evidence-caption">Fig. 2 — Esquema y circuito del Sistema de Cerradura Electrónica con microcontrolador, teclado matricial y servomotor.</p>
+        </div>
+      </div>
+
+      <div id="image-modal" class="modal-overlay" aria-hidden="true">
+        <button type="button" class="modal-close" aria-label="Cerrar vista previa">×</button>
+        <div class="modal-content" role="dialog" aria-modal="true">
+          <img id="modal-img" src="" alt="Vista previa de evidencia" />
+          <p id="modal-caption" class="modal-caption"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- LOGROS -->
+  <section id="logros">
+    <div class="section-inner">
+      <p class="section-label reveal">// 04 — Reconocimientos</p>
+      <h2 class="section-title reveal">Logros Destacados</h2>
+      <div class="logros-list">
+        <div class="logro-item reveal">
+          <div class="logro-check">✓</div>
+          <p>Implementación exitosa en entorno real del buscador en tiempo real para el portal del Ilustre Colegio de Abogados de Ventanilla, utilizado activamente por personal institucional.</p>
+        </div>
+        <div class="logro-item reveal" style="transition-delay:.08s">
+          <div class="logro-check">✓</div>
+          <p>Desarrollo y evaluación comparativa de múltiples modelos de Machine Learning (CNN, SVM, KNN), logrando alta precisión en reconocimiento de patrones para los proyectos TecnoForms y StreamFlix.</p>
+        </div>
+        <div class="logro-item reveal" style="transition-delay:.16s">
+          <div class="logro-check">✓</div>
+          <p>Diseño de soluciones funcionales integrando electrónica y programación en C++ para entornos de automatización e IoT con hardware físico programable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Construido por <span>Deybi Flores </span> · © 2026</p>
+    <p style="margin-top:.4rem">Piura, Perú · Desarrollo de Sistemas y Aplicaciones Móviles</p>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
